@@ -1,0 +1,338 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Sep 14, 2016, 4:57:57 PM
+    Author     : Zharfan
+*/
+body {
+    padding-top: 30px;
+    background: rgba(203, 203, 210, 0.15) none repeat scroll 0 0;
+}
+p .texts{
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-weight: 900;
+}
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+.links > a {
+    color: #636b6f;
+    padding: 10px 25px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.panel{
+	background-color: rgba(255,255,255,1);
+        /*border-radius: 20px;*/
+}
+.panel-login-admin {
+	border-left: 4px solid #1CB94A;
+/*	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);*/
+}
+.panel
+.panel-login-logins {
+	border-left: 4px solid #54a3de;
+/*	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);*/
+}
+.panel-login-regis {
+	border-left: 4px solid #1cb94a;
+/*	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);*/
+}
+.panel-login>.panel-heading {
+	color: #00415d;
+/*	background-color: #fff;
+	border-color: #fff;*/
+	text-align:center;
+	background-color: rgba(255,255,255,0.5);
+}
+.panel-login>.panel-heading a{
+	text-decoration: none;
+	color: #a1aec7;
+	font-weight: bold;
+	font-size: 15px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.panel-login>.panel-heading .admin a.active{
+	color: #049F0C;
+	font-size: 25pt;
+}
+.panel-login>.panel-heading .logins a.active{
+	color: #59b2e6;
+	font-size: 20px;
+}
+.panel-login>.panel-heading .regis a.active{
+	color: #1cb94a;
+	font-size: 20px;
+}
+.panel-login>.panel-heading hr{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	clear: both;
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+	background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+	background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+	background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
+	height: 45px;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.panel-login input:hover,
+.panel-login input:focus {
+	outline:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-color: #ccc;
+}
+.btn-login {
+	background-color: #59B2E0;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #59B2E6;
+}
+.btn-login:hover,
+.btn-login:focus {
+	color: #fff;
+	background-color: #53A3CD;
+	border-color: #53A3CD;
+}
+.btn-admin {
+	background-color: #1CA347;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: 900;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #1CA347;
+}
+.btn-admin:hover,
+.btn-admin:focus {
+	color: #fff;
+	background-color: #049F0C;
+	border-color: #049F0C;
+}
+.forgot-password {
+	text-decoration: underline;
+	color: #888;
+}
+.forgot-password:hover,
+.forgot-password:focus {
+	text-decoration: underline;
+	color: #666;
+}
+
+.btn-register {
+	background-color: #1CB94E;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #1CB94A;
+}
+.btn-register:hover,
+.btn-register:focus {
+	color: #fff;
+	background-color: #1CA347;
+	border-color: #1CA347;
+}
+
+.wrapper{
+    z-index: 1;
+}
+div.loading{
+    background: rgba(0, 0, 0, 0.5);
+    position:absolute;
+    z-index: 99;
+    width: 98.8vw;
+    height: 120vh;
+    margin-top: -120vh;
+}
+.logo-loading{
+    z-index: 2;
+    min-width: 80px;
+    width: 10vw;
+    max-width: 120px;
+    margin-top: 30vh;
+    /*margin-left: 45vw;*/
+    display:block;
+    margin-right:auto;
+    margin-left:auto
+
+}
+.bubblingG {
+    text-align: center;
+    width:78px;
+    height:49px;
+    margin: auto;
+    /*margin-top: 25vh;*/
+}
+
+.bubblingG span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    margin: 24px auto;
+    background: rgb(222,218,222);
+    border-radius: 49px;
+            -o-border-radius: 49px;
+            -ms-border-radius: 49px;
+            -webkit-border-radius: 49px;
+            -moz-border-radius: 49px;
+    animation: bubblingG 1.5s infinite alternate;
+            -o-animation: bubblingG 1.5s infinite alternate;
+            -ms-animation: bubblingG 1.5s infinite alternate;
+            -webkit-animation: bubblingG 1.5s infinite alternate;
+            -moz-animation: bubblingG 1.5s infinite alternate;
+}
+
+#bubblingG_1 {
+    animation-delay: 0s;
+            -o-animation-delay: 0s;
+            -ms-animation-delay: 0s;
+            -webkit-animation-delay: 0s;
+            -moz-animation-delay: 0s;
+}
+
+#bubblingG_2 {
+    animation-delay: 0.45s;
+            -o-animation-delay: 0.45s;
+            -ms-animation-delay: 0.45s;
+            -webkit-animation-delay: 0.45s;
+            -moz-animation-delay: 0.45s;
+}
+
+#bubblingG_3 {
+    animation-delay: 0.9s;
+            -o-animation-delay: 0.9s;
+            -ms-animation-delay: 0.9s;
+            -webkit-animation-delay: 0.9s;
+            -moz-animation-delay: 0.9s;
+}
+
+
+
+@keyframes bubblingG {
+    0% {
+            width: 10px;
+            height: 10px;
+            background-color:rgb(143,140,143);
+            transform: translateY(0);
+    }
+
+    100% {
+            width: 17px;
+            height: 17px;
+            background-color:rgb(255,255,255);
+            transform: translateY(-20px);
+    }
+}
+
+@-o-keyframes bubblingG {
+    0% {
+            width: 10px;
+            height: 10px;
+            background-color:rgb(143,140,143);
+            -o-transform: translateY(0);
+    }
+
+    100% {
+            width: 17px;
+            height: 17px;
+            background-color:rgb(255,255,255);
+            -o-transform: translateY(-20px);
+    }
+}
+
+@-ms-keyframes bubblingG {
+    0% {
+            width: 10px;
+            height: 10px;
+            background-color:rgb(143,140,143);
+            -ms-transform: translateY(0);
+    }
+
+    100% {
+            width: 17px;
+            height: 17px;
+            background-color:rgb(255,255,255);
+            -ms-transform: translateY(-20px);
+    }
+}
+
+@-webkit-keyframes bubblingG {
+    0% {
+            width: 10px;
+            height: 10px;
+            background-color:rgb(143,140,143);
+            -webkit-transform: translateY(0);
+    }
+
+    100% {
+            width: 17px;
+            height: 17px;
+            background-color:rgb(255,255,255);
+            -webkit-transform: translateY(-20px);
+    }
+}
+
+@-moz-keyframes bubblingG {
+    0% {
+            width: 10px;
+            height: 10px;
+            background-color:rgb(143,140,143);
+            -moz-transform: translateY(0);
+    }
+
+    100% {
+            width: 17px;
+            height: 17px;
+            background-color:rgb(255,255,255);
+            -moz-transform: translateY(-20px);
+    }
+}
+.novalid{
+    background-color: #f2dede;
+    border: #FF4A55 solid 1px;
+}
+.login_body{
+    min-height: 80vh;
+    margin-top: 5%;
+}
+.alert_login{
+    font-size: 9pt;
+    font-style: italic;
+    color: #FF4A55;
+    display: none;
+}

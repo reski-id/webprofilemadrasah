@@ -1,0 +1,1 @@
+[31-Aug-2017 12:22:00 Asia/Hong_Kong] PHP Fatal error:  Call to undefined method Mcrud::view_kat_galeri() in /home/ordodev/public_html/sekolah/application/controllers/Web.php on line 184
